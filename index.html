@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Módulo 2 | Retroalimentación Inteligente en Entornos Digitales</title>
+</head>
+<body style="margin:0;background:#fff;">
+
+<div id="sise-intro-mod2">
+<style>
+#sise-intro-mod2{
+  --pink:#FF0E49;
+  --dark:#171416;
+  --dark2:#241F21;
+  --border:#E9E1E4;
+  width:100%;
+  margin:0;
+  padding:0 0 32px;
+  color:var(--dark2);
+  background:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+  line-height:1.5;
+}
+#sise-intro-mod2 *{box-sizing:border-box;}
+#sise-intro-mod2 .container{
+  width:100%;
+  max-width:1180px;
+  margin:0 auto;
+  padding:0 24px;
+}
+#sise-intro-mod2 .hero{
+  position:relative;
+  overflow:hidden;
+  padding:48px 0 54px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 91% 18%,rgba(255,14,73,.22) 0,rgba(255,14,73,0) 34%),
+    radial-gradient(circle at 8% 100%,rgba(120,24,58,.42) 0,rgba(120,24,58,0) 38%),
+    linear-gradient(125deg,#151314 0%,#241B1F 52%,#4A1026 100%);
+}
+#sise-intro-mod2 .hero:before{
+  content:"";
+  position:absolute;
+  width:360px;
+  height:360px;
+  right:-110px;
+  top:-155px;
+  border:2px solid rgba(255,255,255,.09);
+  border-radius:50%;
+}
+#sise-intro-mod2 .hero:after{
+  content:"";
+  position:absolute;
+  width:200px;
+  height:200px;
+  right:45px;
+  top:-52px;
+  border:1px solid rgba(255,14,73,.20);
+  border-radius:50%;
+}
+#sise-intro-mod2 .dots{
+  position:absolute;
+  left:24px;
+  top:22px;
+  width:105px;
+  height:72px;
+  opacity:.42;
+  background-image:radial-gradient(circle,#FF0E49 1.6px,transparent 1.7px);
+  background-size:16px 16px;
+}
+#sise-intro-mod2 .hero-content{
+  position:relative;
+  z-index:2;
+  max-width:980px;
+}
+#sise-intro-mod2 .label{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin:0 0 16px;
+  padding:8px 14px;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:999px;
+  background:rgba(255,255,255,.06);
+  color:#fff;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.05px;
+  text-transform:uppercase;
+}
+#sise-intro-mod2 .dot{
+  width:9px;
+  height:9px;
+  border-radius:50%;
+  background:var(--pink);
+  box-shadow:0 0 0 5px rgba(255,14,73,.14);
+}
+#sise-intro-mod2 h1{
+  margin:0;
+  color:#fff;
+  font-size:clamp(38px,5.2vw,62px);
+  line-height:1.06;
+  font-weight:900;
+  letter-spacing:-1.5px;
+}
+#sise-intro-mod2 h1 span{color:var(--pink);}
+#sise-intro-mod2 .content{padding-top:28px;}
+#sise-intro-mod2 .intro{
+  margin:0 0 24px;
+  padding:22px 24px 22px 26px;
+  border:1px solid #F0DFE5;
+  border-left:6px solid var(--pink);
+  border-radius:0 14px 14px 0;
+  background:linear-gradient(90deg,#FFF0F5 0%,#FFF9FB 100%);
+}
+#sise-intro-mod2 .intro p{
+  margin:0;
+  color:#433B3E;
+  font-size:17px;
+  line-height:1.62;
+}
+#sise-intro-mod2 .video-card{
+  overflow:hidden;
+  border:1px solid var(--border);
+  border-radius:18px;
+  background:#fff;
+  box-shadow:0 16px 38px rgba(35,31,32,.10);
+}
+#sise-intro-mod2 .video-head{
+  padding:20px 24px 18px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 95% 0,rgba(255,14,73,.22),transparent 36%),
+    linear-gradient(130deg,#211D1F 0%,#421123 100%);
+}
+#sise-intro-mod2 .video-kicker{
+  display:block;
+  margin:0 0 5px;
+  color:#FF8AAF;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+}
+#sise-intro-mod2 .video-title{
+  margin:0;
+  color:#fff;
+  font-size:25px;
+  line-height:1.2;
+  font-weight:800;
+}
+#sise-intro-mod2 .video-body{padding:18px;}
+#sise-intro-mod2 .video-frame{
+  overflow:hidden;
+  border-radius:12px;
+  background:#241F21;
+}
+#sise-intro-mod2 .cta-wrap{
+  display:flex;
+  justify-content:center;
+  padding:24px 18px 30px;
+}
+#sise-intro-mod2 .cta-btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  min-height:48px;
+  padding:13px 24px;
+  border-radius:999px;
+  background:#FF0E49;
+  color:#fff;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:16px;
+  font-weight:800;
+  line-height:1;
+  text-decoration:none;
+  box-shadow:0 10px 22px rgba(255,14,73,.22);
+  transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+#sise-intro-mod2 .cta-btn:hover{
+  background:#E5003F;
+  transform:translateY(-1px);
+  box-shadow:0 12px 26px rgba(255,14,73,.28);
+}
+#sise-intro-mod2 .cta-btn:focus-visible{
+  outline:3px solid rgba(255,14,73,.28);
+  outline-offset:4px;
+}
+#sise-intro-mod2 .cta-arrow{
+  display:inline-block;
+  font-size:21px;
+  line-height:1;
+  transition:transform .18s ease;
+}
+#sise-intro-mod2 .cta-btn:hover .cta-arrow{transform:translateX(3px);}
+@media screen and (max-width:600px){
+  #sise-intro-mod2{padding-bottom:24px;}
+  #sise-intro-mod2 .container{padding:0 16px;}
+  #sise-intro-mod2 .hero{padding:40px 0 42px;}
+  #sise-intro-mod2 h1{font-size:37px;letter-spacing:-1px;}
+  #sise-intro-mod2 .content{padding-top:22px;}
+  #sise-intro-mod2 .intro{padding:19px 19px 19px 21px;}
+  #sise-intro-mod2 .intro p{font-size:16px;}
+  #sise-intro-mod2 .video-body{padding:12px;}
+  #sise-intro-mod2 .video-title{font-size:22px;}
+}
+</style>
+
+<section class="hero">
+  <div class="dots"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="label"><span class="dot"></span>Módulo 2</div>
+      <h1>Seguimiento académico <span>y retroalimentación continua</span></h1>
+    </div>
+  </div>
+</section>
+
+<div class="container content">
+  <section class="intro">
+    <p>
+      En este módulo aprenderás a diseñar intervenciones de seguimiento académico a partir del análisis de indicadores de participación y desempeño. Explorarás cómo identificar señales de riesgo, monitorear accesos y entregas, utilizar herramientas de seguimiento en Canvas y organizar acciones de intervención temprana, frecuencia de feedback y acompañamiento continuo para fortalecer la permanencia estudiantil. Revisa el siguiente video para conocer el recorrido y los principales aprendizajes del módulo.
+    </p>
+  </section>
+
+  <section class="video-card">
+    <div class="video-head">
+      <span class="video-kicker">Video de introducción</span>
+      <h2 class="video-title">Conoce el módulo</h2>
+    </div>
+    <div class="video-body">
+      <div class="video-frame">
+        <div style="position: relative; overflow: hidden; aspect-ratio: 1920/1080">
+          <iframe
+            src="https://share.synthesia.io/embeds/videos/97b242a6-b7f8-47fd-af8b-ab9a2d17d526"
+            loading="lazy"
+            title="Synthesia video player - Introducción al Módulo 2 - RIAD"
+            allowfullscreen
+            allow="encrypted-media; fullscreen; microphone; screen-wake-lock;"
+            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0; overflow:hidden;">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <div class="cta-wrap">
+      <a class="cta-btn" href="https://aulad.educad.pe/courses/535/discussion_topics/887?module_item_id=5937" target="_top" aria-label="Iniciar el Tema 3">
+        <span>Iniciar el Tema 3</span><span class="cta-arrow" aria-hidden="true">&#8594;</span>
+      </a>
+    </div>
+  </section>
+</div>
+
+</div>
+</body>
+</html>
